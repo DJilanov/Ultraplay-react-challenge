@@ -1,4 +1,4 @@
-# Redux Messenger FrontEnd
+# Redux e-Sport FrontEnd
 Sample project based on
 ReactJS + Redux
 
