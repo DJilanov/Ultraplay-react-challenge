@@ -2,17 +2,17 @@
 import { config } from '../config/config'
 const apiUrl = config.API_URL
 
-export const fetchMatches = () => {
+export const fetchSports = () => {
   return dispatch => {
     return fetch(apiUrl + 'matches')
       .then(response => response.json())
-      .then(json => dispatch(setMatches(json)))
+      .then(json => dispatch(setSports(json)))
   }
 }
 
-export const setMatches = (matches) => ({
+export const setSports = (sports) => ({
   type: 'SET_SPORTS',
-  matches: matches
+  sports: sports
 })
 
 export const setVisibilityFilter = filter => ({

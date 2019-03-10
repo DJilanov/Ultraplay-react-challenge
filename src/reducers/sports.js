@@ -1,7 +1,7 @@
 const sports = (state = null, action) => {
   switch (action.type) {
 		case 'SET_SPORTS':
-			return action.matches.XmlSports.Sport.map(sport => {
+			return action.sports.XmlSports.Sport.map(sport => {
 				let events = []
 				// Map is quite slow function compared to for ( 71% slower on my machine atleast ). If we are going to play with a lot of data in the FE ( not infinity scroll and request base ) we will need to do it as optimized as possible
 				// The back-end really should return better structured data for the FE... looks at the console.. its much more readable that way
