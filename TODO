@@ -1,0 +1,34 @@
+Overview:
+- The task is to create a client side application that consumes our eSports feed.
+
+- The solution should enable users to view all matches for eSports.
+
+- Users should also be able to group matches by event.
+
+- Users should receive live updates.
+
+Implementation details:
+
+- In this repository you will find a simple Node.js server that exposes a single endpoint: '/matches'. Calling that endpoint will give you access to all the data you need to complete the task.
+
+- You must show all Matches from the endpoint with the following data: Match name and date, the first match Bet and it's Odds (For reference see https://beteast.com/esports)
+
+- The default view should be all matches sorted by StartDate but there should be an option to group the matches by Event
+
+- You should send a request to the endpoint every 10 seconds and apply any changes (for example: Odd Value changed, Match created or removed)
+
+- You are free to use framework of your choice - React (recommended), AngularJS, Angular
+
+Note: All words in italics match to properties in the data so that it's easier for you to navigate.
+
+Please follow the best coding practices, principles, clean and readable code.
+
+Good visual representation is considered a bonus, but is not a must.
+
+Evaluation Criteria (in order of importance):
+
+1. Application design/architecture
+
+2. Code quality
+
+3. Performance
